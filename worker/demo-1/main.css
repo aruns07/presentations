@@ -1,8 +1,8 @@
 @keyframes keepmoving {
     0% { transform: translateX(0)}
     20% { transform: translateX(20vw)}
-    40% { transform: translateX(40vw); color: red;}
-    60% { transform: translateX(60vw); color: red;}
+    40% { transform: translateX(40vw)}
+    60% { transform: translateX(60vw)}
     80% { transform: translateX(80vw)}
     100% { transform: translateX(calc(100vw - 100px))}
 }
