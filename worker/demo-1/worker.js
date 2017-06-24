@@ -1,3 +1,4 @@
+let consumerCount = 0;
 
 const isPrime = (number = 1) => {
     let result = true;
@@ -16,7 +17,6 @@ const countPrimes = (input = 0) => {
     let result = 0;
     while (input > 0) {
         if (isPrime(input)) {
-            console.log(input);
             result++;
         }
         input--;
@@ -24,6 +24,8 @@ const countPrimes = (input = 0) => {
     return result;
 };
 
-self.onmessage = (e)=>{
+self.onmessage = (e) => {
+    consumerCount++;
+    console.log('Consumer Count :', consumerCount);
     self.postMessage(countPrimes(e.data));
 };
