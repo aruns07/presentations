@@ -14,12 +14,21 @@ self.addEventListener('install', (event) => {
             })
     );
     //self.skipWaiting();
+
 });
 
 self.addEventListener('activate', (event) => {
     console.log('Activated');
     //self.clients.claim();
 });
+
+self.addEventListener('message', (event) => {
+    console.log('Message received by SW :', event.data);
+    //No postMessage, either communicate on a port with a client, or send to all clients
+    //self.postMessage('Hello Client');
+});
+
+
 
 //Only cached during install
 self.addEventListener('fetch', (event) => {

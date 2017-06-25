@@ -25,6 +25,11 @@
 (function(){
     navigator.serviceWorker.register('sw.js', { 'scope': './'})
         .then((registration)=>{
-            console.log('SW registered', registration);
+            registration.active.postMessage('Hello SW');
+            console.log('SW registered');
         });
+    
+    navigator.serviceWorker.addEventListener('message', (event) => {
+        console.log('Message received by client :', event.data);
+    });
 })();
