@@ -9,7 +9,7 @@ module.exports = {
     handler: 'networkFirst' 
   },{
     urlPattern: '/worker/demo-6/data/(.*)',
-    handler: 'cacheFirst' 
+    handler: 'networkOnly' 
   }]
 };
 
