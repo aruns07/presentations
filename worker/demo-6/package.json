@@ -1,0 +1,15 @@
+{
+  "name": "demo-6-sw-tools",
+  "version": "1.0.0",
+  "description": "Demo 6 under worker",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-sw-file": "sw-precache --config=./.sw-precache-config.js --verbose"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sw-precache": "^5.2.0"
+  }
+}
