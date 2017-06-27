@@ -24,8 +24,11 @@ const countPrimes = (input = 0) => {
     return result;
 };
 
-self.onmessage = (e) => {
+self.onmessage = (event) => {
     consumerCount++;
+    /**
+     * ****** Number of times event triggered
+     */
     console.log('Consumer Count :', consumerCount);
-    self.postMessage(countPrimes(e.data));
+    self.postMessage(countPrimes(event.data));
 };

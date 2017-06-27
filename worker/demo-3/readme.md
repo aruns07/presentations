@@ -1,2 +1,2 @@
 # Worker Demo 3
-## Memory: cloned, and transferable
+## Memory ping pong: cloned, and transferable

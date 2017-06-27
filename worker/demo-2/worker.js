@@ -5,6 +5,9 @@ self.onconnect = (connectEvent) => {
 
     port.onmessage = (messageEvent) => {
         consumerCount++;
+        /**
+         * ****** Number of times event triggered
+         */
         console.log('Consumer Count :', consumerCount);
         port.postMessage(parseInt(messageEvent.data,10) + 1);
     };
