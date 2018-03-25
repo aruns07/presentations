@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Random Sketch Lines</title>
+        <style>
+            :root {
+                --line-color: orange;
+            }
+
+            body {
+                margin: 0;
+            }
+
+            .component {
+                height: 600px;
+                background-color: #85929E;
+                display: flex;
+                justify-content: center;
+                padding-top: 50px;
+            }
+
+            .element {
+                --line-color: #E74C3C;
+                background-color: #F7DC6F;
+                background-image: paint(bg-lines);
+                
+                border-radius: 5px;
+                width: 200px;
+                height: 50px;
+                font-size: 18px;
+            }
+        </style>
+        <script type="module" src="./main.js"></script>
+    </head>
+    <body>
+        <section class="component">
+            <button class="element">Sketch Lines</button>
+        </section>
+    </body>
+</html>
