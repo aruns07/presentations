@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Art Direction</title>
+        <style>
+
+            body {
+                margin: 0;
+            }
+
+            .component {
+                --input-image: url(../assets/travel-1.jpeg);
+                --input-image-width: 640px;
+                --input-image-height: 426px;
+                --art-block: 0;
+                /* currently <image> type don't download the image*/
+                list-style-image: var(--input-image);
+                
+                background-image: paint(artDirection);
+                background-color: #85929E;
+                width: 640px;
+                height: 426px;
+                border-radius: 5px;
+                position: relative;
+                margin: 0 auto;
+            }
+
+        </style>
+        <script type="module" src="./main.js"></script>
+    </head>
+    <body>
+        <section class="component">
+            <button class="element">Cancel</button>
+        </section>
+        <section>
+            
+        </section>
+    </body>
+</html>
